@@ -18,10 +18,10 @@ html
         console.log(data);
         $(".activity").prepend(JSON.stringify(data) + '<br />');
       });
-      socket.emit('unsubscribe', {"uuid": "0d3a53a0-2a0b-11e3-b09c-ff4de847b2cc"}, function (data) {
-        console.log(data);
-        $(".activity").prepend(JSON.stringify(data) + '<br />');
-      });
+      // socket.emit('unsubscribe', {"uuid": "0d3a53a0-2a0b-11e3-b09c-ff4de847b2cc"}, function (data) {
+      //   console.log(data);
+      //   $(".activity").prepend(JSON.stringify(data) + '<br />');
+      // });
 
       socket.on('identify', function (data) {
         console.log(data);
